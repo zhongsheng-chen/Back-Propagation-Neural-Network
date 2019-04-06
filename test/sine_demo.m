@@ -42,7 +42,7 @@ testInd = tr.testInd;
 validation = true;
 testing =  true;
 if isempty(valInd), validation  = false; end
-if isempty(testInd), validation  = false; end
+if isempty(testInd), testing  = false; end
 
 trainInp = input(:, trainInd);
 trainTarg = target(:, trainInd);
