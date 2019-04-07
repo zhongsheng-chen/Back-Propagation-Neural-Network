@@ -19,7 +19,6 @@ function [net, tr] = nntrain(net, input, target)
 
 %   Date: August 31, 2016
 %   Author: Zhongsheng Chen (E-mail:zhongsheng.chen@outlook.com)
-rand('state', 0)
 global PS TS
 
 [net, data] = nnconfigure(net, input, target);

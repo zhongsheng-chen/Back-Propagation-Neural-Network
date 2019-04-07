@@ -2,7 +2,7 @@ function figHandle = nnupdatefigure(net, i, figHandle, option, trainPerf, valPer
 %UPDATEFIGURE Update errors, gradients, validation checks.
 
 %   Date: August 31, 2016
-%   Author: kalvin chern (E-mail:zhongsheng.chen@outlook.com)
+%   Author: Zhongsheng Chen (E-mail:zhongsheng.chen@outlook.com)
 
 if i == 1
     return;

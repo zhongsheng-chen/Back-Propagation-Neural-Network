@@ -1,6 +1,6 @@
 function T = nnpostprocess(normalizationFcn, TN, TS)
 %NNPOSTPROCESS reverse outputs of the network.
-%   outputs = POSTPROCESS(net, outputs, TS) reverse outputs of the network 
+%   T = POSTPROCESS(net, TN, TS) reverse outputs of the network 
 %       according to target normalization setting (TS);
 
 %   Date: August 31, 2016

@@ -6,6 +6,7 @@
 %%% Date: August 31, 2016
 %%% organization: Beijing University of Chemical Technology
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+rng(0, 'twister')
 traindata = load('sin_train');
 testdata = load('sin_test');
 alldata = [traindata; testdata];
@@ -14,7 +15,7 @@ input = alldata(:, 1 : end - 1)';
 target = alldata(:, end)';
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Parameters Setting %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-hiddenLayerSize = 6;
+hiddenLayerSize = 120;
 net = nncreate(hiddenLayerSize);
 net.trainParam.mc = 0.95;
 net.trainParam.lr = 0.8;
@@ -30,7 +31,7 @@ net.divideParam.testRatio = 0.15;
 
 net.performFcn = 'mse';
 net.adaptFcn = 'none';
-net.trainParam.showCommandLine = false;
+net.trainParam.showCommandLine = true;
 net.trainParam.showWindow = false;
 
 [net, tr] = nntrain(net, input, target);

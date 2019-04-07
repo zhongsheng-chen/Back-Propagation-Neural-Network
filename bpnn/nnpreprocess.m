@@ -1,9 +1,9 @@
-function PN = preprocess(normalizationFcn, P, PS)
+function PN = nnpreprocess(normalizationFcn, P, PS)
 %NNPREPROCESS Return normalized matrix of a given matrix. Atrributes order
 %       in column in the matrix.
 
 %   Date: August 31, 2016
-%   Author: kalvin chern (E-mail:zhongsheng.chen@outlook.com)
+%   Author: Zhongsheng Chen (E-mail:zhongsheng.chen@outlook.com)
 
 switch lower(normalizationFcn)
     case {'mapminmax', 'minmax'}

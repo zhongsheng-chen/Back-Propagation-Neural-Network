@@ -50,12 +50,10 @@ end
 % Comput dW and db.
 X = input;
 for i = Nl : -1 : 1
-    if i == Nl
-        dW{i} = (d{i} * outlayer{i - 1}') / Q;
-    elseif i == 1
+    if i == 1
         dW{i} = (d{i} * X') / Q;
     else
-        
+        dW{i} = (d{i} * outlayer{i - 1}') / Q;
     end
     db{i} = d{i} * ones(1, Q)' / Q;
 end

@@ -2,7 +2,7 @@ function [stop, fail] = nnstopcriteria(net, i, gradient, trainPerf, validPerf)
 %NNSTOPCRITERIA Trigger a stop criterion and Return stop category.
 
 %   Date: August 31, 2016
-%   Author: kalvin chern (E-mail:zhongsheng.chen@outlook.com)
+%   Author: Zhongsheng Chen (E-mail:zhongsheng.chen@outlook.com)
 
 persistent count; % count for validation error violation.
 if isempty(count)
