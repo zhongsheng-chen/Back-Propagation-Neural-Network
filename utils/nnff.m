@@ -6,7 +6,8 @@ function  [outLayer, error, loss] = nnff(net, input, target)
 %                           outputs of each layers in turn.
 
 %   Date: August 31, 2016
-%   Author: Zhongsheng Chen (E-mail:zhongsheng.chen@outlook.com)
+%   Author: Zhongsheng Chen (E-mail:zschen@mail.buct.edu.cn)
+%   organization: Beijing University of Chemical Technology
 
 % the number of batch samples (batch size).
 Q = size(input, 2); 

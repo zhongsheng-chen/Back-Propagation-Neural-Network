@@ -4,7 +4,8 @@ function net = nncheckgrad(net, input, target, dW, db)
 
 
 %   Date: August 31, 2016
-%   Author: Zhongsheng Chen (E-mail:zhongsheng.chen@outlook.com)
+%   Author: Zhongsheng Chen (E-mail:zschen@mail.buct.edu.cn)
+%   organization: Beijing University of Chemical Technology
 
 epsilon = 1e-6;
 tol = 1e-8;

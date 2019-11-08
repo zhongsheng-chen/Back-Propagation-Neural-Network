@@ -3,7 +3,8 @@ function [net, data] = nnconfigure(net, P, T)
 %       net.numOutputs and net.weights).
 
 %   Date: August 31, 2016
-%   Author: Zhongsheng Chen (E-mail:zhongsheng.chen@outlook.com)
+%   Author: Zhongsheng Chen (E-mail:zschen@mail.buct.edu.cn)
+%   organization: Beijing University of Chemical Technology
 
 if ~isequal(size(P, 2), size(T, 2))
     error('NN:Preprocess:misMatch','the size of Inputs mismatch with Targets.');

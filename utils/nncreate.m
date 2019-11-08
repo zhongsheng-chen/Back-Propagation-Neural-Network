@@ -27,7 +27,8 @@ function net = nncreate(hiddenLayer)
 %           net.trainParam.lr = 0.7;
     
 %   Date: August 31, 2016
-%   Author: Zhongsheng Chen (E-mail:zhongsheng.chen@outlook.com)
+%   Author: Zhongsheng Chen (E-mail:zschen@mail.buct.edu.cn)
+%   organization: Beijing University of Chemical Technology
 
 
 net.numInput = 0;

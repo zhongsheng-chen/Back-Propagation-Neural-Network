@@ -7,20 +7,21 @@ function [net, gradient, dW, db] = nnbp(net, input, target, error, outlayer, pdW
 %           net -  A feedforward neural network.
 %           input - Input of networks.
 %           error - Errors between targets and outputs of network.
-%           pdW - Prevoius delta of weights (W).
-%           pdb - Prevoius delta of biases (b).
+%           pdW - Previous delta of weights (W).
+%           pdb - Previous delta of biases (b).
 %   output:
 %           net - The updated network
-%           gradient - gradient of the network. When transfor function on
+%           gradient - gradient of the network. When transfer function on
 %   output layer is purelin, the average gradient of nerons of last hidden
-%   layer is returned. Otherwise, the average gradient of nerons of output
+%   layer is returned. Otherwise, the average gradient of neurons of output
 %   layer is returned.
 %   Example:
 %           [net, gradient, dW, db] = NNBP(net, input, target, error, outlayer, pdW, pdb)
 
 
 %   Date: August 31, 2016
-%   Author: Zhongsheng Chen (E-mail:zhongsheng.chen@outlook.com)
+%   Author: Zhongsheng Chen (E-mail:zschen@mail.buct.edu.cn)
+%   organization: Beijing University of Chemical Technology
 
 % the number of batch samples (batch size).
 Q = size(input, 2);

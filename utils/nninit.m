@@ -4,8 +4,8 @@ function  net = nninit(net)
 %   to input layer (IW).
     
 %   Date: August 31, 2016
-%   Author: Zhongsheng Chen (E-mail:zhongsheng.chen@outlook.com)
-
+%   Author: Zhongsheng Chen (E-mail:zschen@mail.buct.edu.cn)
+%   organization: Beijing University of Chemical Technology
 
 lb = -1;
 ub =  1;

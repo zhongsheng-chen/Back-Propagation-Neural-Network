@@ -4,7 +4,8 @@ function [net, tr, data, option] = nnprepare(net, data)
 %           weights and biases.              
 
 %   Date: August 31, 2016
-%   Author: Zhongsheng Chen (E-mail:zhongsheng.chen@outlook.com)
+%   Author: Zhongsheng Chen (E-mail:zschen@mail.buct.edu.cn)
+%   organization: Beijing University of Chemical Technology
 
 % Initilize previous delta of weights and biases.
 Nl = net.numLayer;

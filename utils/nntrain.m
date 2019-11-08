@@ -18,7 +18,9 @@ function [net, tr] = nntrain(net, input, target)
 %
 
 %   Date: August 31, 2016
-%   Author: Zhongsheng Chen (E-mail:zhongsheng.chen@outlook.com)
+%   Author: Zhongsheng Chen (E-mail:zschen@mail.buct.edu.cn)
+%   organization: Beijing University of Chemical Technology
+
 global PS TS
 
 [net, data] = nnconfigure(net, input, target);

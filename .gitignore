@@ -1,0 +1,4 @@
+# ignore git generated directories and files.
+.idea/
+
+.DS_Store

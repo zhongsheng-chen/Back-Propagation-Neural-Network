@@ -1,21 +1,24 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% This program is a demo on sine function which is used to demonstrate
-%%% how to tran and test back-propagation neural networks.
+%%% This routine is trying to fit a set of scatter points 
+%%% sampled from sine function demonstrating how to train
+%%% and test neural networks using back-propagation algorithm.
 %%%
-%%% Author: Zhongsheng Chen (zhongsheng.chen@outlook.com)
+%%%
+%%% Author: Zhongsheng Chen (zschen@mail.buct.edu.cn)
 %%% Date: August 31, 2016
 %%% organization: Beijing University of Chemical Technology
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-rng(0, 'twister')
-traindata = load('sin_train');
-testdata = load('sin_test');
+
+traindata = load('../src/data/sin_train');
+testdata = load('../src/data/sin_test');
+
 alldata = [traindata; testdata];
 
 input = alldata(:, 1 : end - 1)';
 target = alldata(:, end)';
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Parameters Setting %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-hiddenLayerSize = 120;
+hiddenLayerSize = [8 10 8];
 net = nncreate(hiddenLayerSize);
 net.trainParam.mc = 0.95;
 net.trainParam.lr = 0.8;
@@ -32,7 +35,7 @@ net.divideParam.testRatio = 0.15;
 net.performFcn = 'mse';
 net.adaptFcn = 'none';
 net.trainParam.showCommandLine = true;
-net.trainParam.showWindow = false;
+net.trainParam.showWindow = true;
 
 [net, tr] = nntrain(net, input, target);
 
